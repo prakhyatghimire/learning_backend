@@ -12,7 +12,7 @@ const filename = process.argv[2];
 const content  = process.argv[3];
 
 if (!filename || !content) {
-  console.error('Usage: node writer.js <filename> <content>');
+  console.error('Usage: node qn4.js <filename> <content>');
   process.exit(1);
 }
 

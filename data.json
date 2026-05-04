@@ -1,0 +1,67 @@
+[
+    {
+      "id": 1,
+      "name": "Aarav Sharma",
+      "age": 24,
+      "email": "aarav.sharma@example.com",
+      "isActive": true,
+      "skills": ["JavaScript", "Node.js", "HTML"],
+      "address": {
+        "city": "Kathmandu",
+        "country": "Nepal",
+        "zip": 44600
+      }
+    },
+    {
+      "id": 2,
+      "name": "Maya Singh",
+      "age": 29,
+      "email": "maya.singh@example.com",
+      "isActive": false,
+      "skills": ["Python", "Data Analysis"],
+      "address": {
+        "city": "Pokhara",
+        "country": "Nepal",
+        "zip": 33700
+      }
+    },
+    {
+      "id": 3,
+      "name": "Rohan Patel",
+      "age": 31,
+      "email": "rohan.patel@example.com",
+      "isActive": true,
+      "skills": ["Java", "Spring Boot", "SQL"],
+      "address": {
+        "city": "Delhi",
+        "country": "India",
+        "zip": 110001
+      }
+    },
+    {
+      "id": 4,
+      "name": "Sita Thapa",
+      "age": 22,
+      "email": "sita.thapa@example.com",
+      "isActive": true,
+      "skills": ["C++", "Data Structures"],
+      "address": {
+        "city": "Biratnagar",
+        "country": "Nepal",
+        "zip": 56613
+      }
+    },
+    {
+      "id": 5,
+      "name": "Kiran Joshi",
+      "age": 27,
+      "email": "kiran.joshi@example.com",
+      "isActive": false,
+      "skills": ["React", "CSS", "UI Design"],
+      "address": {
+        "city": "Lalitpur",
+        "country": "Nepal",
+        "zip": 44700
+      }
+    }
+  ]
