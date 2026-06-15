@@ -1,0 +1,101 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Backend Roadmap Flow">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <mxCell id="start" value="Project Setup&#xa;- Node.js + Express&#xa;- Folder Structure&#xa;- DB Connection (PostgreSQL)&#xa;- Environment Config"
+          style="rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;align=left;spacingLeft=10;"
+          vertex="1" parent="1">
+          <mxGeometry x="60" y="120" width="240" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="auth" value="Authentication System&#xa;- Register / Login&#xa;- JWT Token&#xa;- Password Hashing&#xa;- Auth Middleware"
+          style="rounded=1;fillColor=#d5e8d4;strokeColor=#82b366;align=left;spacingLeft=10;"
+          vertex="1" parent="1">
+          <mxGeometry x="380" y="120" width="240" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="movies" value="Movie System (TMDB)&#xa;- Popular Movies&#xa;- New Movies&#xa;- Search Movies&#xa;- Movie Details&#xa;- Recommendations"
+          style="rounded=1;fillColor=#fff2cc;strokeColor=#d6b656;align=left;spacingLeft=10;"
+          vertex="1" parent="1">
+          <mxGeometry x="700" y="120" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="reviews" value="Review &amp; Rating System&#xa;- Add Review&#xa;- Edit / Delete Review&#xa;- Ratings (1-5)&#xa;- Fetch Reviews by Movie"
+          style="rounded=1;fillColor=#f8cecc;strokeColor=#b85450;align=left;spacingLeft=10;"
+          vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="240" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="user" value="User System&#xa;- Profile Page&#xa;- User Details&#xa;- User Reviews History"
+          style="rounded=1;fillColor=#e1d5e7;strokeColor=#9673a6;align=left;spacingLeft=10;"
+          vertex="1" parent="1">
+          <mxGeometry x="60" y="340" width="240" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="watchlist" value="Watchlist Feature&#xa;- Add Movie&#xa;- Remove Movie&#xa;- View Saved Movies"
+          style="rounded=1;fillColor=#d0e0e3;strokeColor=#76a5af;align=left;spacingLeft=10;"
+          vertex="1" parent="1">
+          <mxGeometry x="700" y="340" width="240" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="nepali" value="Custom Movie Layer (Nepali)&#xa;- Manual Movie Add&#xa;- Stored in DB&#xa;- Mixed with TMDB Feed"
+          style="rounded=1;fillColor=#fce5cd;strokeColor=#e69138;align=left;spacingLeft=10;"
+          vertex="1" parent="1">
+          <mxGeometry x="380" y="560" width="240" height="120" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="opt" value="Backend Enhancements&#xa;- Pagination&#xa;- Rate Limiting&#xa;- Caching (optional)&#xa;- Error Handling&#xa;- Input Validation"
+          style="rounded=1;fillColor=#cfe2f3;strokeColor=#3d85c6;align=left;spacingLeft=10;"
+          vertex="1" parent="1">
+          <mxGeometry x="700" y="560" width="240" height="140" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e1" edge="1" source="start" target="auth"
+          style="endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;"
+          parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e2" edge="1" source="auth" target="movies"
+          style="endArrow=block;endFill=1;strokeWidth=2;exitX=1;exitY=0.5;entryX=0;entryY=0.5;"
+          parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e3" edge="1" source="movies" target="reviews"
+          style="endArrow=block;endFill=1;strokeWidth=2;exitX=0;exitY=1;entryX=1;entryY=0;"
+          parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e4" edge="1" source="reviews" target="user"
+          style="endArrow=block;endFill=1;strokeWidth=2;exitX=0;exitY=0.5;entryX=1;entryY=0.5;"
+          parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e5" edge="1" source="movies" target="watchlist"
+          style="endArrow=block;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;"
+          parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e6" edge="1" source="reviews" target="nepali"
+          style="endArrow=block;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;"
+          parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="e7" edge="1" source="watchlist" target="opt"
+          style="endArrow=block;endFill=1;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;"
+          parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

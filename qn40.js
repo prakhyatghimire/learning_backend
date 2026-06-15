@@ -15,5 +15,6 @@ function authenticate(req,res,next){
 
 app.get("/user",(req,res)=>{
     res.send('this is a user page')
+    
 })
 app.listen(3000);
